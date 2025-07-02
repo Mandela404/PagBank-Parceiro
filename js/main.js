@@ -551,11 +551,8 @@ class PagBankApp {
                 }
             });
             
-            if (currentSection !== 'Início') {
-                document.title = `${currentSection} - PagBank Maquininhas`;
-            } else {
-                document.title = 'Maquininhas PagBank - Transforme seu Negócio Hoje';
-            }
+            // Mantém o título fixo como "PagBank - Parceiros"
+            document.title = 'PagBank - Parceiros';
         }, 1000);
 
         window.addEventListener('scroll', updateTitle);
